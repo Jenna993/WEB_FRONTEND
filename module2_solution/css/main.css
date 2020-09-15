@@ -11,10 +11,22 @@
 	background-color: #2d41e4;
 }
 
+body{
+	font-size: 20px;
+}
+
 p {
 	clear: both;
 	color: #FFFFFF;
-	padding: 10px;
+	width:95%;
+	height: 160px;
+	overflow: hidden;
+	padding-left:15px;
+	padding-top: 15px;
+}
+
+p:hover{
+ 	overflow-y: scroll;
 }
 .purple {
 	background-color: #992de4;
@@ -24,34 +36,30 @@ p {
 	background-color: #892121;
 }
 
-.title-box {
-  height: 50px;
-  width: 100px;
-  border: 1px solid black;
-}
-
 .row {
 	width: 100%;
-	padding:15px;
+	padding-left: 15px;
 }
 
 h1{
 	text-align: center;
-	padding:15px;
+	padding-top:25px;
+	padding-bottom: 25px;
+	font-size:175%;
 }
 
 section {
 	background-color: #606060;
+	/*margin: 5px;*/
 }
 
 
 section > h2{
 	padding: 5px;
-	margin:0;
 	border: 1px solid black;
 	float:right;
 	color: #FFFFFF;
-
+	font-size: 125%;
 }
 
 
@@ -61,42 +69,43 @@ section > h2{
 	.col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
 		float:left;
 		border: 1px solid black;
+		margin:5px;
 	}
 	.col-lg-1 {
-		width:8.33%;
+		width:8%;
 	}
 	.col-lg-2 {
-		width:16.66%;
+		width:16%;
 	}
 	.col-lg-3 {
-		width: 25%;
+		width: 24%;
 	}
 	.col-lg-4 {
-		width: 33%;
+		width: 32%;
 	}
 	.col-lg-5 {
-		width: 41.66%;
+		width: 40%;
 	}
 	.col-lg-6 {
-		width: 50%;
+		width: 48%;
 	}
 	.col-lg-7 {
-		width: 58.33%;
+		width: 56%;
 	} 
 	.col-lg-8 {
-		width: 66.66%;
+		width: 64%;
 	}
 	.col-lg-9 { 
-		width: 74.99%; 
+		width: 72%; 
 	}
 	.col-lg-10 {
-		width: 83.33%;
+		width: 80%;
 	}
 	.col-lg-11 {
-		width: 91.66%;
+		width: 86%;
 	} 
 	.col-lg-12 {
-		width:100%;
+		width: 95%;
 	}
 	.cat-large{
 		display:none;
@@ -110,42 +119,44 @@ section > h2{
 	.col-md-9, .col-md-10, .col-md-11, .col-md-12 {
 		float:left;
 		border: 1px solid black;
+		margin:5px;
+
 	}
 	.col-md-1 {
-		width:8.33%;
+		width:8%;
 	}
 	.col-md-2 {
-		width:16.66%;
+		width:16%;
 	}
 	.col-md-3 {
-		width: 25%;
+		width: 24%;
 	}
 	.col-md-4 {
-		width: 33%;
+		width: 32%;
 	}
 	.col-md-5 {
-		width: 41.66%;
+		width: 40%;
 	}
 	.col-md-6 {
-		width: 50%;
+		width: 48%;
 	}
 	.col-md-7 {
-		width: 58.33%;
+		width: 56%;
 	} 
 	.col-md-8 {
-		width: 66.66%;
+		width: 64%;
 	}
 	.col-md-9 { 
-		width: 74.99%; 
+		width: 72%;
 	}
 	.col-md-10 {
-		width: 83.33%;
+		width: 80%;
 	}
 	.col-md-11 {
-		width: 91.66%;
+		width: 88%;
 	} 
 	.col-md-12 {
-		width:100%;
+		width: 97%;
 	}
 
 	.cat-tablet{
@@ -165,42 +176,44 @@ section > h2{
 	.col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
 		float:left;
 		border: 1px solid black;
+		margin:2%;
+
 	}
 	.col-sm-1 {
-		width:8.33%;
+		width:8%;
 	}
 	.col-sm-2 {
-		width:16.66%;
+		width:16%;
 	}
 	.col-sm-3 {
-		width: 25%;
+		width: 24%;
 	}
 	.col-sm-4 {
-		width: 33%;
+		width: 32%;
 	}
 	.col-sm-5 {
-		width: 41.66%;
+		width: 40%;
 	}
 	.col-sm-6 {
-		width: 50%;
+		width: 48%;
 	}
 	.col-sm-7 {
-		width: 58.33%;
+		width: 56%;
 	} 
 	.col-sm-8 {
-		width: 66.66%;
+		width: 64%;
 	}
 	.col-sm-9 { 
-		width: 74.99%; 
+		width: 72%;
 	}
 	.col-sm-10 {
-		width: 83.33%;
+		width: 80%;
 	}
 	.col-sm-11 {
-		width: 91.66%;
+		width: 88%;
 	} 
 	.col-sm-12 {
-		width:100%;
+		width:95%;
 	}
 
 	.menu-small{
@@ -211,10 +224,15 @@ section > h2{
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 24px;
 		text-align:left;
+		padding-left:3%;
+		padding-bottom:8px;
 	}
 	.h2-small{
 		text-align:center;
 		float:none;
+	}
+	.row{
+		padding-left: 10px;
 	}
 
 }
