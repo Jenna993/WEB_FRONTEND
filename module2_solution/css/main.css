@@ -54,7 +54,7 @@ p:hover {
 
 section {
 	background-color: #787878;
-	/*margin: 5px;*/
+	border-radius: 5px;
 }
 
 section > h2 {
@@ -63,6 +63,8 @@ section > h2 {
 	float:right;
 	color: #FFFFFF;
 	font-size: 125%;
+	border-radius: 5px;
+
 }
 
 
