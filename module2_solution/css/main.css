@@ -1,6 +1,6 @@
 /***Base CSS*****/
 
-*{
+* {
 	font-family: "Times New Roman", Times, serif;;
 	box-sizing: border-box;
 	padding: 0;
@@ -11,10 +11,21 @@
 	background-color: #2d41e4;
 }
 
-body{
+body {
 	font-size: 20px;
 	background-color: #505050;
 	color: #FFFFFF;
+}
+
+h1 {
+	text-align: center;
+	padding-top:25px;
+	padding-bottom: 25px;
+	font-size:175%;
+}
+
+.maroon {
+	background-color: #892121;
 }
 
 p {
@@ -27,16 +38,13 @@ p {
 	padding-top: 15px;
 }
 
-p:hover{
+p:hover {
  	overflow-y: scroll;
  	cursor: ns-resize;
 }
+
 .purple {
 	background-color: #992de4;
-}
-
-.maroon{
-	background-color: #892121;
 }
 
 .row {
@@ -44,20 +52,12 @@ p:hover{
 	padding-left: 15px;
 }
 
-h1{
-	text-align: center;
-	padding-top:25px;
-	padding-bottom: 25px;
-	font-size:175%;
-}
-
 section {
 	background-color: #787878;
 	/*margin: 5px;*/
 }
 
-
-section > h2{
+section > h2 {
 	padding: 5px;
 	border: 1px solid black;
 	float:right;
@@ -68,50 +68,63 @@ section > h2{
 
 /**** Large Devices****/
 @media(min-width:992px){
+	.cat-large{
+		display:none;
+	}
+
 	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8,
 	.col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
 		float:left;
 		border: 1px solid black;
 		margin:5px;
 	}
+
 	.col-lg-1 {
 		width:8%;
 	}
+
 	.col-lg-2 {
 		width:16%;
 	}
+
 	.col-lg-3 {
 		width: 24%;
 	}
+
 	.col-lg-4 {
 		width: 32%;
 	}
+
 	.col-lg-5 {
 		width: 40%;
 	}
+
 	.col-lg-6 {
 		width: 48%;
 	}
+
 	.col-lg-7 {
 		width: 56%;
 	} 
+
 	.col-lg-8 {
 		width: 64%;
 	}
+
 	.col-lg-9 { 
 		width: 72%; 
 	}
+
 	.col-lg-10 {
 		width: 80%;
 	}
+
 	.col-lg-11 {
 		width: 86%;
 	} 
+
 	.col-lg-12 {
 		width: 95%;
-	}
-	.cat-large{
-		display:none;
 	}
 
 	.h2-large{
@@ -122,52 +135,63 @@ section > h2{
 
 /**** Medium Devices****/
 @media(min-width:768px)and (max-width:991px){
+	.cat-tablet{
+		display:none;
+	}
+
 	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8,
 	.col-md-9, .col-md-10, .col-md-11, .col-md-12 {
 		float:left;
 		border: 1px solid black;
 		margin:5px;
-
 	}
+
 	.col-md-1 {
 		width:8%;
 	}
+
 	.col-md-2 {
 		width:16%;
 	}
+
 	.col-md-3 {
 		width: 24%;
 	}
+
 	.col-md-4 {
 		width: 32%;
 	}
+
 	.col-md-5 {
 		width: 40%;
 	}
+
 	.col-md-6 {
 		width: 48%;
 	}
+
 	.col-md-7 {
 		width: 56%;
 	} 
+
 	.col-md-8 {
 		width: 64%;
 	}
+
 	.col-md-9 { 
 		width: 72%;
 	}
+
 	.col-md-10 {
 		width: 80%;
 	}
+
 	.col-md-11 {
 		width: 88%;
 	} 
+
 	.col-md-12 {
 		width: 97%;
-	}
-
-	.cat-tablet{
-		display:none;
 	}
 
 	.h2-tablet{
@@ -182,54 +206,6 @@ section > h2{
 /**** Small Devices****/
 
 @media(max-width:767px){
-.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
-	.col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-		float:left;
-		border: 1px solid black;
-		margin:2%;
-
-	}
-	.col-sm-1 {
-		width:8%;
-	}
-	.col-sm-2 {
-		width:16%;
-	}
-	.col-sm-3 {
-		width: 24%;
-	}
-	.col-sm-4 {
-		width: 32%;
-	}
-	.col-sm-5 {
-		width: 40%;
-	}
-	.col-sm-6 {
-		width: 48%;
-	}
-	.col-sm-7 {
-		width: 56%;
-	} 
-	.col-sm-8 {
-		width: 64%;
-	}
-	.col-sm-9 { 
-		width: 72%;
-	}
-	.col-sm-10 {
-		width: 80%;
-	}
-	.col-sm-11 {
-		width: 88%;
-	} 
-	.col-sm-12 {
-		width:95%;
-	}
-
-	.menu-small{
-		display:none;
-	}
-
 	.cat-small{
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 24px;
@@ -237,15 +213,76 @@ section > h2{
 		padding-left:3%;
 		padding-bottom:8px;
 	}
+
+	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8,
+	.col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+		float:left;
+		border: 1px solid black;
+		margin:2%;
+	}
+
+	.col-sm-1 {
+		width:8%;
+	}
+
+	.col-sm-2 {
+		width:16%;
+	}
+
+	.col-sm-3 {
+		width: 24%;
+	}
+
+	.col-sm-4 {
+		width: 32%;
+	}
+
+	.col-sm-5 {
+		width: 40%;
+	}
+
+	.col-sm-6 {
+		width: 48%;
+	}
+
+	.col-sm-7 {
+		width: 56%;
+	} 
+
+	.col-sm-8 {
+		width: 64%;
+	}
+
+	.col-sm-9 { 
+		width: 72%;
+	}
+
+	.col-sm-10 {
+		width: 80%;
+	}
+
+	.col-sm-11 {
+		width: 88%;
+	} 
+
+	.col-sm-12 {
+		width:95%;
+	}
+
 	.h2-small{
 		text-align:center;
 		float:none;
 	}
+
 	.h2-small-no{
 		display: none;
 	}
+
+	.menu-small{
+		display:none;
+	}
+
 	.row{
 		padding-left: 10px;
 	}
-
 }
