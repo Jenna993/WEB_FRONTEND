@@ -110,6 +110,10 @@ section > h2{
 	.cat-large{
 		display:none;
 	}
+
+	.h2-large{
+		display:none;
+	}
 }
 
 
@@ -163,6 +167,9 @@ section > h2{
 		display:none;
 	}
 
+	.h2-tablet{
+		display:none;
+	}
 
 }
 
@@ -230,6 +237,9 @@ section > h2{
 	.h2-small{
 		text-align:center;
 		float:none;
+	}
+	.h2-small-no{
+		display: none;
 	}
 	.row{
 		padding-left: 10px;
