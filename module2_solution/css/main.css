@@ -13,6 +13,8 @@
 
 body{
 	font-size: 20px;
+	background-color: #505050;
+	color: #FFFFFF;
 }
 
 p {
@@ -49,7 +51,7 @@ h1{
 }
 
 section {
-	background-color: #606060;
+	background-color: #787878;
 	/*margin: 5px;*/
 }
 
