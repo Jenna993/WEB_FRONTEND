@@ -29,6 +29,7 @@ p {
 
 p:hover{
  	overflow-y: scroll;
+ 	cursor: ns-resize;
 }
 .purple {
 	background-color: #992de4;
