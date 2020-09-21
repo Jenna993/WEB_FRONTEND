@@ -1,15 +1,10 @@
 /***Base CSS*****/
 
-* {
-	font-family: "Times New Roman", Times, serif;
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-
 body {
 	background-color: #505050;
+	font-family: "Times New Roman", Times, serif;
 	color: #FFFFFF;
+	font-size: 16px;
 }
 
 /*HEADER CSS*/
@@ -18,15 +13,13 @@ body {
 	border-radius: 0;
 	border: 0;
 	padding-bottom: 25px;
+
 }
 
 .navbar-brand{
 	padding-top: 25px;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
 
 .navbar-brand h1{
 	font-weight: bold;
@@ -35,12 +28,17 @@ body {
 	color: #FFFFFF;
 	margin-top: 0;
 }
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
 #nav-list {
   margin-top: 10px;
 }
 
 #nav-list a {
-  color: #892121;
+  color: #FFFFFF;
   text-align: center;
 }
 
@@ -48,7 +46,7 @@ body {
   background: #E7E7E7;
 }
 
-navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #EE82EE;
 }
 
@@ -60,6 +58,10 @@ navbar-header button.navbar-toggle, .navbar-header .icon-bar {
 
 /* Main content*/
 
+#beef, #chicken, #sushi{
+	margin: 0 auto 15px;
+}
+
 div.row section a{
 	color: #00008B;
 	font-weight: bold;
@@ -69,12 +71,11 @@ section {
 	background-color: #787878;
 	border-radius: 5px;
 	height: 700px;
+	border:1px solid black;
+	overflow-y:scroll;
 }
 
-#beef, #chicken, #sushi{
-	margin-right:5px;
-	margin-bottom:5px;
-}
+
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 
@@ -90,8 +91,4 @@ section {
 	#header-nav{
 		padding-bottom: 13px;
 	}
-}
-
-
- 
 }
