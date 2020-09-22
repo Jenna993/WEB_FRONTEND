@@ -8,7 +8,7 @@ body {
 }
 
 /*HEADER CSS*/
-#header-nav{
+#header-nav {
 	background-color: #892121;
 	border-radius: 0;
 	border: 0;
@@ -16,12 +16,12 @@ body {
 
 }
 
-.navbar-brand{
+.navbar-brand {
 	padding-top: 25px;
 }
 
 
-.navbar-brand h1{
+.navbar-brand h1 {
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #020202;
 	line-height: .75;
@@ -57,38 +57,27 @@ body {
 }
 
 /* Main content*/
-
-#beef, #chicken, #sushi{
+#beef, #chicken, #sushi {
 	margin: 0 auto 15px;
 }
 
-div.row section a{
+div.row section a {
 	color: #00008B;
 	font-weight: bold;
-
 }
-section {
+
+div.tiles {
+	padding: 15px;
+	border: 1px solid black;
 	background-color: #787878;
 	border-radius: 5px;
-	height: 700px;
-	border:1px solid black;
-	overflow-y:scroll;
-}
-
-
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/********** Small devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
- 
+	height: 700px;		
+	overflow-y: scroll;
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
-	#header-nav{
+	#header-nav {
 		padding-bottom: 13px;
 	}
 }
