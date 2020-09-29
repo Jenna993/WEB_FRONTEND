@@ -66,28 +66,43 @@ WARNING!!! WARNING!!!
   console.log("----------Map function -----------");
   function mappingNames(name){
     var firstLetter = name.charAt(0).toLowerCase();
-     if (firstLetter === 'j') {
-       return byeSpeaker.speakSimple(name);
+    //Wasn't sure which method I was supposed to use
+     if (firstLetter === 'j') { 
+        //byeSpeaker.speak(name);
+        return byeSpeaker.speakSimple(name);
       } else {
-       return helloSpeaker.speakSimple(name);
+        //helloSpeaker.speak(name);
+        return helloSpeaker.speakSimple(name);
       }
-  }
+  };
   let nameMap = names.map(mappingNames);
 
   for(var i=0; i<nameMap.length; i++) {
     console.log( nameMap[i] );
   }
 
+
   console.log("----------Reduce function -----------");
 
-  function reduceNames(names){
-    var firstLetter = name.charAt(0).toLowerCase();
-
-
+  function reduceNames(accumulator, val, index, name){
+    var firstLetter = val.charAt(0).toLowerCase();
+     if (firstLetter === 'j') { 
+        accumulator["bye"].push(byeSpeaker.speakSimple(val));
+      } else {
+        accumulator["hello"].push(helloSpeaker.speakSimple(val));  
+      }
+      return accumulator;
   }
 
-  names.reduce(reduceNames, {hello: [], bye: []});
+  var results = names.reduce(reduceNames, { hello:[], bye:[]});
 
+  for(var i=0; i<results.hello.length; i++) {
+    console.log( results.hello[i]);
+  }
+
+  for(var i=0; i<results.bye.length; i++) {
+    console.log( results.bye[i]);
+  }
 
 
 })();
