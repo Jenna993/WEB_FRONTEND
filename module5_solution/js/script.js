@@ -176,14 +176,22 @@ function buildAndShowAboutHTML () {
     aboutRestaurantHtml,
     function (html) {
       var random = chooseRandomNumber();
-      console.log(random);
-      //var AboutHtmlToInsertIntoMainPage //= insertProperty(html,
-                   //"classX",
-                  // random);
-      var AboutHtmlToInsertIntoMainPage = insertProperty(html,
-        "starRating",random);
+      var outerStar = "far fa-star";
+      var innerStar = "fa fa-star";
+      var AboutHtml = html;
+      for(var i=1; i<=5; i++ ){
+        var classX = "class" + i;
+        if(i <= random){
+         AboutHtml = insertProperty(AboutHtml, classX, innerStar);
+        }else{
+          AboutHtml = insertProperty(AboutHtml, classX, outerStar);
+        }
 
-      insertHtml("#main-content", AboutHtmlToInsertIntoMainPage);
+      }
+ 
+      AboutHtml = insertProperty(AboutHtml, "starRating", random);
+
+      insertHtml("#main-content", AboutHtml);
 
     },
     false); 
