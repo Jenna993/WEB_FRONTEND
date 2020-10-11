@@ -20,7 +20,8 @@
 				var count = 0;
 
 				for(var i=0; i<items.length;i++){
-					if(!items[i]){
+					items[i] =  items[i].replace(/  +/g, ' ');
+					if(!items[i] || items[i] == " "){
 						$scope.inputMessage = "Empty items are not considered valid input, so it is not added into the count";
 					}
 					else{
