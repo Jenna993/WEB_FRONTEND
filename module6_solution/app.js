@@ -41,6 +41,7 @@
 					$scope.LunchMessage = "Too much!";
 				}
 			}else{
+				$scope.inputMessage = "";
 				$scope.LunchMessage = "Please enter data first";
 				$scope.borderChange ="redBorder";
 				$scope.colorChange = "red";
