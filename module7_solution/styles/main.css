@@ -1,0 +1,29 @@
+ body{
+  text-align: center;
+  color: white;
+  background-color: #444444;
+ }
+
+ .emptyMessage {
+  font-weight: bold;
+  color: #b20000;
+  font-size: 1.2em;
+}
+
+li {
+  margin-bottom: 7px;
+  font-size: 1.2em;
+}
+
+li > button {
+  margin-left: 6px;
+}
+
+button > span {
+  color: green;
+}
+
+input {
+  color: black;
+  width: 60px;
+}
