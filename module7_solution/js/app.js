@@ -50,7 +50,7 @@
 
 	function CostFilter() {
   		return function (input) {
-  			return "$$" + input;
+  			return "$$$" + input;
   	};
 }
 
