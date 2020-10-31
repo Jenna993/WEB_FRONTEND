@@ -10,22 +10,21 @@
   </head>
 <body>
    <div class="container" ng-controller="NarrowItDownController as narrowed">
-    <h1>Narrow Down Your Chinese Menu Choice</h1>
+   <h1>Narrow Down Your Chinese Menu Choice</h1>
 
-    <div class="row">
-      <div class="col-xs-3">
-      <input type="text" ng-model="narrowed.term" placeholder="search term" class="form-control">
+      <div class="row">
+        <div class="col-xs-3">
+          <input type="text" ng-model="narrowed.term" placeholder="search term" class="form-control">
+        </div>
+        <div class="col-xs-3">
+          <button class="btn btn-primary" ng-click="narrowed.getMatch(narrowed.term);">Narrow It Down For Me!</button>
+        </div>
       </div>
-      <div class="col-xs-3">
-        <button class="btn btn-primary" ng-click="narrowed.getMatch(narrowed.term);">Narrow It Down For Me!</button>
+      <h3 class="empty" ng-if="!message">{{narrowed.message}}</h3>
+      <!-- found-items should be implemented as a component -->
+      <div ng-if="narrowed.found">
+        <found-items found="narrowed.found" on-remove="narrowed.removeItem(index)"></found-items>
       </div>
     </div>
-    <h3 ng-if="!message">{{narrowed.message}}</h3>
-    <!-- found-items should be implemented as a component -->
-    <div ng-if="narrowed.found">
-      <found-items found="narrowed.found" on-remove="narrowed.removeItem(index)"></found-items>
-    </div>
-  </div>
-
 </body>
 </html>

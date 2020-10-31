@@ -1,7 +1,11 @@
 body{
   color: #FFFFFF;
   background-color: #444444;
-;
+
+}
+
+.empty {
+  color: #800020;
 }
 
 h1 {
@@ -37,8 +41,11 @@ input[type="text"] {
   height: 3em;
 }
 
-.remove-btn{
+.remove-btn {
   background-color:#800020;
+}
+.padded {
+  padding-bottom:15px;
 }
 
 @-webkit-keyframes load8 {

@@ -1,8 +1,14 @@
-<div>
-	<ul>
-	  <li ng-repeat="item in narrowed.found">
-	    {{ item.name }}, {{ item.short_name }}, {{item.description}}
+<div class="row padded" ng-repeat="item in narrowed.found">
+	<div class="col-xs-3">
+		{{ item.short_name}}
+	</div>
+	<div class="col-xs-3">
+	    {{ item.name }}
+	</div>
+	<div class="col-xs-3">
+	     {{item.description}}
+	</div>
+	<div class="col-xs-3">
 	    <button  class="btn remove-btn" ng-click="narrowed.onRemove({index: $index});">Don't want this one!</button>
-	  </li>
-	</ul>
+	</div>
 </div>

@@ -27,6 +27,9 @@
 	
 		narrow.removeItem = function (itemIndex) {
 			var foundItemsArray = narrow.found;
+			if(foundItemsArray.length ==1){
+				narrow.message = "No more options";
+			}
 			foundItemsArray.splice(itemIndex, 1);
 			narrow.found = foundItemsArray;
  		 };
