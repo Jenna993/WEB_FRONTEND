@@ -10,9 +10,12 @@
 	function NarrowItDownController(MenuSearchService){
 		var narrow = this;
 		narrow.term = "";
-		// narrow.getMatch = function(){
-		var promise = MenuSearchService.getMatchedMenuItems(narrow.term);
-		promise.then(function(result){
+		narrow.message = "";
+		narrow.getMatch = function(){
+			narrow.found ="";
+			narrow.message = "";
+			var promise = MenuSearchService.getMatchedMenuItems(narrow.term);
+			promise.then(function(result){
 			if(result === undefined || result.length ==0){
 				narrow.message = "Nothing Found";
 			}
@@ -20,6 +23,7 @@
 				narrow.found = result;
 			}
 		});
+	}
 	
 		narrow.removeItem = function (itemIndex) {
 			var foundItemsArray = narrow.found;
@@ -42,7 +46,8 @@
     			var foundItems=[];
     			for(var i in result.data.menu_items){
     				var item = result.data.menu_items[i];
-    				if(item.description.toLowerCase().indexOf(searchTerm.toLowerCase())!= -1){
+
+    				if(searchTerm!="" && item.description.toLowerCase().indexOf(searchTerm.toLowerCase())!= -1){
     					foundItems.push(item);
     				}
     			}
