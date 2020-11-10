@@ -25,3 +25,8 @@ a[ui-sref] {
 a[ui-sref]:hover {
 	color:#800020;
 }
+
+.clear-it {
+	clear:both;
+
+}
