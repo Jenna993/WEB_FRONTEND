@@ -1,0 +1,16 @@
+<h2 class="padded">Items</h2>
+<div class=container>
+  <div class="row">
+      <div ng-repeat="item in itemDetail.items.data.menu_items">
+          <div class="col-xs-4 padded">
+            {{ item.short_name}}
+          </div>
+          <div class="col-xs-4 padded">
+              {{ item.name }}
+          </div>
+          <div class="col-xs-4 padded">
+               {{item.description}}
+          </div>
+      </div>
+  </div>
+</div>

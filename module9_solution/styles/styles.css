@@ -1,0 +1,27 @@
+body{
+  color: #FFFFFF;
+  background-color: #444444;
+  text-align:center;
+}
+
+.padded {
+  padding-bottom:15px;
+}
+
+div[ui-sref]:hover {
+	color: #800020;
+}
+
+a {
+	font-size: 20px;
+}
+
+a[ui-sref] {
+
+	text-decoration-line: none;
+	color: #FFFFFF;
+}
+
+a[ui-sref]:hover {
+	color:#800020;
+}

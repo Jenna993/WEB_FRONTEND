@@ -1,0 +1,8 @@
+<h2 class="padded">Categories</h2>
+<div class=container>
+  <div class="row">
+        <div class="col-xs-6" ng-repeat="category in cat.categories.data" ui-sref="menuItems({itemId:category.short_name})">
+          <p>{{category.name}}</p>
+        </div>
+  </div>
+</div>
