@@ -1,0 +1,60 @@
+<form name="news">
+	<h1 class="newsletter padding-news">Newsletter Signup</h1>
+	<div class="row padding-news">
+		<div class="col-xs-6 newsletter">
+			<span>First Name: </span>
+		</div>
+		<div class="col-xs-3">
+			<input type="text" name="firstname" ng-model="signupCtrl.user.firstname" required></div>
+		</div>
+	<div class="row padding-news">
+		<div class="col-xs-6 newsletter">
+			<span>Last Name: </span>
+		</div>
+		<div class="col-xs-3">
+			<input type="text" name="lastname" ng-model="signupCtrl.user.lastname" required>
+		</div>
+	</div>
+	<div class="row padding-news">
+		<div class="col-xs-6 newsletter">
+			<span>Email: </span>
+		</div>
+		<div class="col-xs-3">
+			<input type="email" name="email" ng-model="signupCtrl.user.email" required>
+		</div>
+		<span ng-show="news.email.$invalid && news.number.$touched">
+			Please format email correctly.
+	    </span>
+	</div>
+	<div class="row padding-news">
+		<div class="col-xs-6 newsletter">
+			<span>Phone Number: </span>
+		</div>
+		<div class="col-xs-3">
+			<input type="text" name="number" pattern="(\d{3})-(\d{3})-(\d{4})" ng-model="signupCtrl.user.number" required>
+		</div>
+		<span ng-show="(news.number.$invalid && news.number.$touched)">
+				Phone number must be 10 digits
+	    </span>
+	</div>
+	<div class="row padding-news">
+		<div class="col-xs-6 newsletter">
+			<span>Menu Number of Favorite Dish: </span>
+		</div>
+		<div class="col-xs-3">
+			<input type="text" name="menuNumber" minlength="2" maxlength="5" ng-model="signupCtrl.user.menuNumber" ng-change="signupCtrl.checkFavorite()" required>
+		</div>
+		<span ng-if="signupCtrl.message && news.menuNumber.$touched" >
+			No such menu number exists	   
+	 	</span>
+	</div>
+	<div class="row padding-news button-padding">
+		<div class="col-xs-6">
+		</div>
+		<div class="col-xs-6">
+			<button class="submit-button" ng-disabled="news.$invalid"
+          ng-click="signupCtrl.submit()" >Submit</button> 
+		</div>
+		<span ng-if="signupCtrl.success">Your information has been saved.</span>
+	</div>
+</form>

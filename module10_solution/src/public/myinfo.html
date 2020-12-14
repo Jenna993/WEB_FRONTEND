@@ -1,0 +1,52 @@
+<div ng-show="myInfoCtrl.data">
+	<h1 class="newsletter padding-news"> My Info!</h1>
+	<div class="row padding-news">
+		<div class="col-xs-6 newsletter">
+			<span>First Name: </span>
+		</div>
+		<div class="col-xs-6">
+			<span>{{myInfoCtrl.user.firstname}} </span>
+		</div>
+	</div>
+	<div class="row padding-news">
+		<div class="col-xs-6 newsletter">
+			<span>Last Name: </span>
+		</div>
+		<div class="col-xs-6">
+			<span>{{myInfoCtrl.user.lastname}} </span>
+		</div>
+	</div>
+	<div class="row padding-news">
+		<div class="col-xs-6 newsletter">
+			<span>Email: </span>
+		</div>
+		<div class="col-xs-6">
+			<span>{{myInfoCtrl.user.email}} </span>
+		</div>
+	</div>
+	<div class="row padding-news">
+		<div class="col-xs-6 newsletter">
+			<span>Phone Number: </span>
+		</div>
+		<div class="col-xs-6">
+			<span>{{myInfoCtrl.user.number}} </span>
+		</div>
+	</div>
+	<div class="row padding-news">
+		<div class="col-xs-6 newsletter">
+			<span>Menu Number of Favorite Dish: </span>
+		</div>
+		<div class="col-xs-3">
+			 <img width="200" height="200" ng-src="{{myInfoCtrl.basePath}}/images/{{myInfoCtrl.user.menuNumber}}.jpg" alt="{{myInfoCtrl.user.title}}">
+		</div>
+		<div class="col-xs-3">
+			<span class="newsletter">{{myInfoCtrl.user.menuNumber}} </span><br>
+			<span class="newsletter">{{myInfoCtrl.user.title}} </span><br>
+			<span>{{myInfoCtrl.user.description}} </span>
+		</div>
+	</div>
+</div>
+<div ng-show="!myInfoCtrl.data">
+	<h1 class="newsletter">Not Signed Up Yet. Sign up Now!</h1>
+	<a ui-sref="public.signup">Sign Up!</a>
+</div>

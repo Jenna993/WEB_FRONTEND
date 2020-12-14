@@ -111,6 +111,24 @@ h3.menu-item-title {
   font-size: .9em;
   font-style: italic;
 }
+
+.newsletter {
+  text-align: center;
+}
+.padding-news {
+    padding-bottom: 10px;
+
+}
+.submit-button {
+  background-color:#557c3e;
+} 
+.button-padding{
+  padding-left: 216px; 
+}
+
+input{
+  color: black;
+}
 /* END SINGLE CATEGORY PAGE */
 
 
