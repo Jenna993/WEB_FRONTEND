@@ -27,8 +27,19 @@ function MenuService($http, ApiPath) {
     });
   };
 
+  service.getShortNames = function (shortName){
+    var config = {};
+    if (shortName) {
+      config.params = {'short_name': shortName};
+    }
+    return $http.get(ApiPath + '/menu_items/'+shortName+'.json').then(function (response) {
+          return response.data;
+    }).catch(function(response){
+      return response;
+    });
+
+  };
+
 }
-
-
 
 })();
