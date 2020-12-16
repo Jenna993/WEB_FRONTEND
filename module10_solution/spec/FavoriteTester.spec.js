@@ -4,13 +4,12 @@ describe("FavoriteTester", function() {
   var $controller;
   var signupController;
   var $httpbackend;
-  beforeEach(inject(function(_$httpbackend_) {
+  beforeEach(function() {
     realShortName = "D1" ;
     fakeShortName = "TTT1";
     module(function ($provide) {
         $provide.service('MenuServiceErrorMock', function () {
           var service = this;
-          $httpbackend=_$httpBackend_;
 
           service.getShortNames = function (menuNumber) {
             var basePath = "https://pure-cove-56216.herokuapp.com";
@@ -28,16 +27,17 @@ describe("FavoriteTester", function() {
           };     
       });
     });
+    beforeEach(module('public'));
 
-    angular.module("FavoriteTester");
-  }));
+  });
 
 
-  beforeEach(inject(function (_$controller_, MenuServiceErrorMock, InfoServiceErrorMock) {
+  beforeEach(inject(function (_$controller_, _$httpBackend_, MenuServiceErrorMock, InfoServiceErrorMock) {
     $controller = _$controller_;
+    $httpbackend=_$httpBackend_;
 
-    signupController =
-      $controller('SignupController',
+
+    signupController = $controller('SignupController',
                   {MenuService: MenuServiceErrorMock, InfoService: InfoServiceErrorMock});
 
   }));
